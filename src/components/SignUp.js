@@ -1,13 +1,34 @@
 import React, { useState } from 'react'
+import {Navigate, useNavigate} from 'react-router-dom'
 
 function SignUp() {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-    const collectData = () => {
-        console.log(name);
+    const collectData = async () => {
+        console.log(name,email,password);
+
+          // backend wali file se attach kar rahay hain register function se uthaya or poora link postman se
+        let result = await fetch('http://localhost:5000/register', {
+
+          method:'post', // jub bhi data save krna hota post use karte hain
+          body: JSON.stringify({name,email,password}),
+          headers: {
+            'Content-Type':'application/json'
+          },
+
+        });
+
+
+        result = await result.json()
+
+        if(result){
+          navigate('/')
+        }
+        console.log(result);
     }
   return (
     <div className='register'>
