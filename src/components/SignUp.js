@@ -26,10 +26,13 @@ function SignUp() {
         result = await result.json()
 
         if(result){
+          console.log(result);
+          localStorage.setItem('user', JSON.stringify(result)); // user data local storage mai save karane k liye
           navigate('/')
         }
-        console.log(result);
     }
+
+    
   return (
     <div className='register'>
         <h1> Register </h1>
