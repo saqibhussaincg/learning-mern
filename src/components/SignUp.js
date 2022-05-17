@@ -8,7 +8,7 @@ function SignUp() {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    
+    // agar user signin hai tou home per navigate kardo user sign up wala page nahi dekh sakta
   useEffect( () => {
     const auth = localStorage.getItem('user');
     if(auth)
@@ -36,7 +36,7 @@ function SignUp() {
 
         if(result){
           console.log(result);
-          localStorage.setItem('user', JSON.stringify(result)); // user data local storage mai save karane k liye
+          localStorage.setItem('user', JSON.stringify(result)); // user data local storage mai save karane k liye or setItem built in command hai, user name se key banao os k andar result wala data ajaye
           navigate('/')
         }
     }

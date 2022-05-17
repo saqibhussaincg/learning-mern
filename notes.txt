@@ -1,0 +1,43 @@
+1. npm init
+2. install express
+3. install mongoose
+4. install nodemon
+
+5. sub se pehle express require karte hain or app.get use karte hain check karne k liye chal raha hai ya nahi
+
+6. install react router dom navigation link k liye
+
+7. nav k component mai link to karenge, wohi name denge jese a tag mai dete hain html mai eg: to="/add" Add Product
+
+8. browser router > routes > route mai path mai wohi name ayega jo link to mai dia tha or element k andar ayega component. eg: <route path="/add" element={component}
+
+9. make signup page component 
+= define use state set values name email password etc
+
+10. install mongodb compass and check with app.get chal raha hai ya nahi
+
+11. mongodb use karne k liye mongoose require karna hoga or connect bhi karna hoga or connect k andar database ka path function k andar denge
+
+12. new mongoose.Schema k andar schema define honge
+
+13. mongoose.model(product, or schema) define karenge database se data lane k liye ya edit karne k liye
+
+// BACKEND 
+
+14. config k andar mongoose require karenge or connect karenge or import require karenge is file ko index mai
+
+15. User k component mai schema ko define karenge or export karenge model yahi database collection ka naam or index ki file mai import karenge 
+
+16. ab ek route banayega api k liye app.post register name ki api banayega
+
+17. body se data lane k liye midlleware express.json() use karenge kyun k postman se data json format mai ata hai
+
+18. new User(req.body) schema route k andar call karenge os k andar body se data ayega or wo body wala data result k variable mai user.save() mai jayega or result jayega res.send(result) mai or idhar se mongoDB mai save ho jayega 
+
+19. install cors 
+cors ko require karenge 
+or app.use(cors()) use karege as a middleware
+cors backend se issue hota hai per nazar browser per aata hai
+
+20.  
+

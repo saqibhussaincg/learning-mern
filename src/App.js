@@ -14,7 +14,6 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-
         <Route element={<PrivateComponent/>}> 
         
         <Route path='/' element={<h1>Product Listing Component</h1>}></Route>
@@ -43,3 +42,6 @@ function App() {
 }
 
 export default App;
+
+// route pora pora component accept karta hai
+// path per kia open karna hai path hona chaiye same

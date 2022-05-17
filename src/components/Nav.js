@@ -5,6 +5,8 @@ function Nav() {
   const auth = localStorage.getItem('user');
   const navigate = useNavigate();
 
+
+  // jub logout per click karain tou local storage kardo khali or navigate kardo signup walay page per 
   const logout = () => {
     localStorage.clear();
     navigate('/signup')
@@ -18,9 +20,18 @@ function Nav() {
             <li><Link to='/update'>Update Product</Link></li>
             <li><Link to='/profile'>Profile</Link></li>
 
+
             <li>
-            { auth ? <Link onClick={logout} to='/signup'>Logout</Link> :
+
+            { auth
+              ? 
+              
+             <Link onClick={logout} to='/signup'>Logout</Link> 
+
+              :
+
             <Link to='/signup'>Sign Up</Link> }
+
             </li>
 
             <li><Link to='/login'>Login</Link></li>
