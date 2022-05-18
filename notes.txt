@@ -39,5 +39,45 @@ cors ko require karenge
 or app.use(cors()) use karege as a middleware
 cors backend se issue hota hai per nazar browser per aata hai
 
-20.  
+// SIGNUP COMPONENT WORKING
 
+20. SIGNUP component per kaam kar rahay hain
+button click k function mai var result mai fetch mai url pass hoga register api ka jo backend mai banaya hai 2nd parameter mai 
+
+method define hoga 
+
+body define hogi os mai kia dalna hai wo backend dev batayega eg: name, email, pass.
+or ye json stringily k andar jayega.
+
+header bhejna hota hai content type ka
+
+or akhir mai var result call karenge await de kar await result.json()
+
+if(result) mai homepage per navigate kara sakte hain
+
+21 . locatstorage mai signup user k data ko rakhenge
+
+22. Private Component 
+private component mai return <outlet> define karenge
+auth condition lagaye ge check karenge localstorage se getitem user
+user signup hai tou outlet dikhao warna signup walay page per le jao
+
+23. signup walay component mai useeffect banayega or condition denge same localstorage se item get karo user (req.body) wala data save hai ya nahi phr
+if ki condition
+
+24. NAV Component kyun k signup k baad signup wala page nazar nahi aana chaiye  
+same wohi const auth localstorage getitem wali line idhar bhi ayegi os is variable k zariye condition banaye ge li link k andar 
+
+25. LOGOUT Function in NAV Component 
+logout ka koi component nahi hoga logout ka just onclick banega link mai or os k click per signup k oper jana chaiye 
+or local storage bhi clear ho jayega
+or navigate ka function bhi laga sakte hain function mai safety k liye
+usenavigate re render kar deta hai 
+
+BACKEND WORKING
+
+26. login name ki api banayega check karenge res.send(req.body) 
+
+27. select -password se password show nahi hoga
+
+if else condition lagengi login karane k liye user email password math ho raha hai ya nahi
