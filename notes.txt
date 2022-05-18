@@ -92,3 +92,17 @@ fetch kar wayenge or os ka method or object define karenge
 31. conditions lagayenge login karne k liye 
 
 32. useEffect dalenge localstorage k liye takay jese hi app start ho tou useEffect ka data load ho jaye
+
+// NAVAR COMPONENT CHANGES
+33. NAV Component phr dubara se nav mai if else ki condition lagaye ge
+
+34. {JSON.parse(auth).name} name show karane k liye eg: logout k text k sath laga dia
+
+
+//  ADD PRODUCT API 
+
+35. make product collection in mongodb
+
+36. BACKEND mai Product.js ki file banegi or os k andar schema banega schema k andar wo fields hoti hain jo database k andar store karni hoti hain
+
+36. add-product name ki api bana k data store and save karayege postman to mongodb

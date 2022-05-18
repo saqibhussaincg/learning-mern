@@ -20,7 +20,7 @@ function Nav() {
             <li><Link to='/update'>Update Product</Link></li>
             <li><Link to='/profile'>Profile</Link></li>
       
-            <li><Link onClick={logout} to='/signup'>Logout</Link></li> 
+            <li><Link onClick={logout} to='/signup'>Logout ({JSON.parse(auth).name})</Link></li> 
         </ul>
             :
         <ul className='nav-ul'>
