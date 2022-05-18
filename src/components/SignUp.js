@@ -15,7 +15,7 @@ function SignUp() {
     {
       navigate('/')
     }
-  })
+  }, [])
 
     const collectData = async () => {
         console.log(name,email,password);

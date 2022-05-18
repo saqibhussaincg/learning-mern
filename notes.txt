@@ -80,4 +80,15 @@ BACKEND WORKING
 
 27. select -password se password show nahi hoga
 
-if else condition lagengi login karane k liye user email password math ho raha hai ya nahi
+if else condition lagengi login karane k liye user email password match ho raha hai ya nahi
+
+28. register wali api mai result ko object mai convert karenge or os mai de password delete kar denge
+
+29. LOGIN COMPONENT making
+
+30. LOGIN API INTEGRATION in login component function just like do in signup registration function
+fetch kar wayenge or os ka method or object define karenge
+
+31. conditions lagayenge login karne k liye 
+
+32. useEffect dalenge localstorage k liye takay jese hi app start ho tou useEffect ka data load ho jaye
