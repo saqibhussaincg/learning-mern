@@ -106,3 +106,7 @@ fetch kar wayenge or os ka method or object define karenge
 36. BACKEND mai Product.js ki file banegi or os k andar schema banega schema k andar wo fields hoti hain jo database k andar store karni hoti hain
 
 36. add-product name ki api bana k data store and save karayege postman to mongodb
+
+37. make add product component setting input fields and use states
+
+38. setting api fetching and making method and body to save data to database 
